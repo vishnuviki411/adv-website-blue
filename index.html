@@ -3,9 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advocate R. Sivamanikumaran | Apex Lawroot Legal Solutions</title>
-  <meta name="description" content="Advocate R. Sivamanikumaran - Senior lawyer in Tamil Nadu, practicing in District Courts and High Court of Madras. Expert in civil litigation, property disputes, corporate law, family law, and notary public services.">
+  <title>Advocate R. Sivamanikumaran | Lawyer in Virudhachalam, Cuddalore & Chennai High Court</title>
+  <meta name="description" content="Advocate R. Sivamanikumaran - Senior lawyer in Virudhachalam, practicing in Cuddalore District Court and Chennai High Court. Expert in civil litigation, property disputes, corporate law, family law, and notary public services.">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  
+   <!-- ✅ SEO Schema Markup -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Advocate R. Sivamanikumaran",
+  "image": "https://yourdomain.com/apex-lawroot-logo.jpeg",
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/apex-lawroot-logo.jpeg",
+  "description": "Senior lawyer in Virudhachalam, practicing in Cuddalore District Court and Chennai High Court. Expert in civil litigation, property disputes, corporate law, family law, and notary public services.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "70/1 Karpagam Illam, Salem Main Rd",
+    "addressLocality": "Virudhachalam",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "606001",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91 95787 64622",
+  "email": "shivamanikumaran@gmail.com",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Virudhachalam Court" },
+    { "@type": "AdministrativeArea", "name": "Cuddalore Court" },
+    { "@type": "AdministrativeArea", "name": "Madras High Court" }
+  ],
+  "sameAs": [
+    "https://wa.me/919578764622",
+    "mailto:shivamanikumaran@gmail.com"
+  ]
+}
+</script>
+
+  
+  
   <style>
     body {margin:0;font-family:'Roboto',sans-serif;background:#0b1d3a;color:#f5f5f5;scroll-behavior:smooth;}
 nav {position:fixed;top:0;width:100%;background:rgba(11,29,58,0.95);padding:0.8rem 2rem;z-index:1000;display:flex;justify-content:space-between;align-items:center;}
@@ -16,6 +51,13 @@ nav .nav-links a:hover {color:#d4af37;}
 .logo-area span {font-family:'Playfair Display',serif;font-size:1.2rem;color:#d4af37;font-weight:bold;}
 header {height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(to right,#0b1d3a,#13294b);}
 header h1 {font-family:'Playfair Display',serif;font-size:3rem;color:#d4af37;margin:0;}
+header h2 {
+  font-family:'Playfair Display',serif;
+  font-size:1.6rem; /* slightly smaller than section headings */
+  color:#d4af37;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
 header p {font-size:1.2rem;margin-top:1rem;color:#ddd;}
 .cta {margin-top:2rem;padding:1rem 2rem;background:#d4af37;color:#0b1d3a;font-weight:bold;border-radius:6px;text-decoration:none;transition:background 0.3s;}
 .cta:hover {background:#b8860b;color:#fff;}
@@ -105,6 +147,70 @@ nav {
     display: none !important; /* completely hidden */
   }
 }
+
+/* Keep contact-box vertical always */
+.contact-box {
+  text-align: center; /* center everything */
+}
+
+/* Style buttons consistently */
+.contact-box .cta {
+  display: inline-block;
+  margin: 0.5rem;
+  min-width: 120px;
+  text-align: center;
+}
+
+
+/* On larger screens, show buttons side by side */
+@media(min-width:768px) {
+  .contact-box {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem; /* spacing between buttons */
+  }
+  .contact-box .cta {
+    width: auto; /* buttons shrink/expand naturally */
+    margin: 0;   /* remove vertical margin */
+  }
+}
+
+/* Animate Nav Bar */
+nav {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeDown 1s ease forwards;
+}
+
+@keyframes fadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate Hero Section Elements */
+
+header h1, header h2, header p, header .cta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+header h1 { animation-delay: 0.3s; }
+header h2 { animation-delay: 0.6s; }
+header p  { animation-delay: 0.9s; }
+header .cta { animation-delay: 1.2s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
   
   </style>
 </head>
@@ -123,6 +229,7 @@ nav {
 
   <header>
     <h1>Advocate R. Sivamanikumaran</h1>
+    <h2>Notary Public – Govt of India</h2>
     <p>Senior Lawyer in Tamil Nadu | District Courts & High Court of Madras</p>
     <a href="#contact" class="cta">Consult Now</a>
   </header>
@@ -136,6 +243,26 @@ nav {
 
     <p>Over the past decade and a half, he has specialized in high‑stakes civil and corporate disputes, while streamlining document drafting, vetting, and lifecycle management. His services extend to regulatory compliance, succession certificates, consumer disputes, divorce matters, and property law opinions. Whether guiding clients through commercial agreements, resolving civil litigation, or offering online legal opinion reports for property transactions, his focus remains clear: mitigating risk, protecting vital interests, and delivering peace of mind.</p>
   </section>
+
+<section id="service-area">
+  <h2>Service Areas</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>Virudhachalam Court</h3>
+      <p>Dedicated representation in Virudhachalam District Court for civil and criminal matters.</p>
+    </div>
+    <div class="service-card">
+      <h3>Cuddalore Court</h3>
+      <p>Experienced advocacy in Cuddalore District Court across property, family, and corporate disputes.</p>
+    </div>
+    <div class="service-card">
+      <h3>Madras High Court</h3>
+      <p>Strong representation in the High Court of Madras for appeals, writs, and complex litigation.</p>
+    </div>
+  </div>
+</section>
+
+
     <section id="services">
     <h2>Legal Services</h2>
     <div class="services">
@@ -154,14 +281,30 @@ nav {
       <div class="service-card"><h3>Online Legal Opinion (Property Purchase)</h3><p>Detailed online reports for safe property investments.</p></div>
       <div class="service-card"><h3>Notary Public Services</h3><p>Certified notary services for documents and agreements.</p></div>
       <div class="service-card"><h3>Online Legal Opinion (Property)</h3><p>Remote legal verification of property documents for clients.</p></div>
+      <div class="service-card">
+  <h3>NRI Legal Services</h3>
+  <p>Specialized support for Non-Resident Indians in property disputes, succession matters, and legal documentation.</p>
+</div>
+
     </div>
   </section>
+
+
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-box">
       <p><strong>Office:</strong> 70/1 Karpagam Illam, Salem Main Rd, Virudhachalam, Tamil Nadu 606001</p>
+      <p><strong>Phone:</strong> +91 95787 64622</p>
+<p><strong>Email:</strong> shivamanikumaran@gmail.com</p>
+
       <br>
-      <a href="tel:+919578764622" class="cta">Call Now</a>
+      <a href="tel:+919578764622" class="cta">Call</a>
+      <!-- Mail Button -->
+<a href="mailto:shivamanikumaran@gmail.com?subject=Legal Consultation Request&body=Hello Advocate Sivamanikumaran, I would like to schedule a consultation regarding my case." class="cta">Mail</a>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919578764622?text=Hello%20Advocate%20Sivamanikumaran,%20I%20would%20like%20to%20discuss%20a%20legal%20matter." target="_blank" class="cta">WhatsApp</a>
+
     </div>
   </section>
 
