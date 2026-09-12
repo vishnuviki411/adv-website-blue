@@ -213,9 +213,45 @@ html {
   scroll-behavior: smooth;
 }
 
+/* CTA group container */
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2rem; /* spacing between buttons */
+  margin-top: 2rem;
+}
+
+/* Buttons inherit existing .cta styles */
+.cta-group .cta {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+/* Animation delays for sequence */
+.cta-group .cta:first-child { animation-delay: 1.2s; }
+.cta-group .cta:last-child { animation-delay: 1.2s; }
+
+/* Mobile: stack buttons vertically */
+@media(max-width:768px) {
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
-  
+/* Reduce gap between content and buttons */
+header p {
+  margin-bottom: 0.2rem; /* smaller bottom margin under the text */
+}
+
+/* Adjust CTA group spacing */
+.cta-group {
+  margin-top: 1.2rem; /* reduce vertical gap above buttons */
+}
+s 
   </style>
 </head>
 <body>
@@ -237,8 +273,15 @@ html {
     <h1>Advocate R. Sivamanikumaran</h1>
     <h2>Notary Public – Govt of India</h2>
     <p>Senior Lawyer in Tamil Nadu | District Courts & High Court of Madras</p>
-    <a href="#contact" class="cta">Consult Now</a>
+      <div class="cta-group" >
+        <a href="#contact" class="cta">Consult Now</a>
+        <a href="https://lawroot.blogspot.com/" target="_blank" class="cta">Visit Our Blog</a>
+      </div>
+
   </header>
+
+
+
   <section id="about">
     <h2>About Me</h2>
     <p><b>Advocate R. Sivamanikumaran</b> is a senior lawyer in Tamil Nadu, practicing across District Courts and the High Court of Madras. Enrolled with the Bar Council of Tamil Nadu in 2011, he brings over <b>15 years of expertise</b> in civil litigation, property disputes, corporate law, and family matters. His reputation is built on consistent advocacy, integrity, and client‑focused solutions.
