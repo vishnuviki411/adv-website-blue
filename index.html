@@ -251,7 +251,15 @@ header p {
 .cta-group {
   margin-top: 1.2rem; /* reduce vertical gap above buttons */
 }
-s 
+
+/* Reduce vertical gap between stacked buttons on mobile */
+@media(max-width:768px) {
+  
+    /* Override button margins in mobile */
+  .cta-group .cta {
+    margin: 0.3rem 0; /* reduce vertical margin between buttons */
+  }
+}
   </style>
 </head>
 <body>
